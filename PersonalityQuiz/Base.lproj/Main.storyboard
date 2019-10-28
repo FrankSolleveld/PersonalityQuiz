@@ -212,6 +212,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCJ-ZB-eQl">
                                         <rect key="frame" x="0.0" y="90.5" width="374" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed:" destination="Z1Z-vW-SCL" eventType="touchUpInside" id="tzW-2O-iWa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -259,6 +262,7 @@
                         <outlet property="questionProgressView" destination="TF4-Hz-SqR" id="weN-Gx-N7U"/>
                         <outlet property="rangedLabel1" destination="Z4k-Lf-IkO" id="C5a-ep-NGB"/>
                         <outlet property="rangedLabel2" destination="ys4-oO-dKc" id="8Hh-33-EIK"/>
+                        <outlet property="rangedSlider" destination="0Ql-SR-U11" id="c3U-mO-mlg"/>
                         <outlet property="rangedStackView" destination="iJY-o8-cVn" id="Zeg-Vs-Qhv"/>
                         <outlet property="singleButton1" destination="1Qu-0G-FNG" id="A74-yI-ugE"/>
                         <outlet property="singleButton2" destination="xoT-qe-Db5" id="kA3-Qv-tCk"/>

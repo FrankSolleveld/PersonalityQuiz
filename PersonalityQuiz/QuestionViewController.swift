@@ -29,6 +29,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet var multiSwitch4: UISwitch!
     
     @IBOutlet var rangedStackView: UIStackView!
+    @IBOutlet var rangedSlider: UISlider!
     @IBOutlet var rangedLabel1: UILabel!
     @IBOutlet var rangedLabel2: UILabel!
     
@@ -100,6 +101,12 @@ class QuestionViewController: UIViewController {
         nextQuestion()
     }
     
+    @IBAction func rangedAnswerButtonPressed(_ sender: Any) {
+        let currentAnswers = questions[questionIndex].answers
+        let index = Int(round(rangedSlider.value * Float(currentAnswers.count)))
+        answersChosen.append(currentAnswers[index])
+        nextQuestion()
+    }
     
     func updateUI() {
         singleStackView.isHidden = true
@@ -125,7 +132,13 @@ class QuestionViewController: UIViewController {
     }
     
     func nextQuestion() {
-        // TODO: Finish this func
+        questionIndex += 1
+        
+        if questionIndex < questions.count {
+            updateUI()
+        } else if questionIndex > questions.count {
+            performSegue(withIdentifier: "ResultsSegue", sender: nil)
+        }
     }
     
     func updateSingleStack(using answers: [Answer]){
