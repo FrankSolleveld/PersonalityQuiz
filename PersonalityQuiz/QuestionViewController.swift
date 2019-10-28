@@ -16,12 +16,15 @@ class QuestionViewController: UIViewController {
     @IBOutlet var singleButton3: UIButton!
     @IBOutlet var singleButton4: UIButton!
     
-    
     @IBOutlet var multipleStackView: UIStackView!
-    
+    @IBOutlet var multiLabel1: UILabel!
+    @IBOutlet var multiLabel2: UILabel!
+    @IBOutlet var multiLabel3: UILabel!
+    @IBOutlet var multiLabel4: UILabel!
     
     @IBOutlet var rangedStackView: UIStackView!
-    
+    @IBOutlet var rangedLabel1: UILabel!
+    @IBOutlet var rangedLabel2: UILabel!
     
     
     var questions: [Question] = [

@@ -180,7 +180,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="146" translatesAutoresizingMaskIntoConstraints="NO" id="z6V-sX-klt">
                                         <rect key="frame" x="0.0" y="50" width="374" height="20.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4k-Lf-IkO">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4k-Lf-IkO" userLabel="Ranged Label1">
                                                 <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -231,7 +231,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="EpE-65-6f7"/>
                     <connections>
+                        <outlet property="multiLabel1" destination="Z4k-Lf-IkO" id="ReZ-7E-BXx"/>
+                        <outlet property="multiLabel2" destination="jA8-ZI-GNF" id="a6O-fK-2Qt"/>
+                        <outlet property="multiLabel3" destination="Wr9-DK-9vi" id="Q9r-qA-r4B"/>
+                        <outlet property="multiLabel4" destination="gdY-9d-chY" id="9vw-rL-QrM"/>
                         <outlet property="multipleStackView" destination="6vT-SL-fnq" id="7Hh-ED-Gr7"/>
+                        <outlet property="rangedLabel1" destination="Z4k-Lf-IkO" id="C5a-ep-NGB"/>
+                        <outlet property="rangedLabel2" destination="ys4-oO-dKc" id="8Hh-33-EIK"/>
                         <outlet property="rangedStackView" destination="iJY-o8-cVn" id="Zeg-Vs-Qhv"/>
                         <outlet property="singleButton1" destination="1Qu-0G-FNG" id="A74-yI-ugE"/>
                         <outlet property="singleButton2" destination="xoT-qe-Db5" id="kA3-Qv-tCk"/>
