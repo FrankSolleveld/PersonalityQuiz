@@ -18,6 +18,19 @@ class ResultsViewController: UIViewController {
     }
 
     func calculatePersonalityResult() {
+        var frequencyOfAnswers: [DeviceType: Int] = [:]
+        let responseTypes = responses.map { $0.type }
         
+        for response in responses {
+            let newCount: Int
+            if let oldCount = frequencyOfAnswers[response] {
+                newCount = oldCount + 1
+            } else {
+                newCount = 1
+            }
+            frequencyOfAnswers[response] = newCount
+        
+            let mostCommonAnswer = frequencyOfAnswers.sorted { $0.1 > $1.1 }.first!.key
+        }
     }
 }
